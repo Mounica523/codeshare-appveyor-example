@@ -32,6 +32,7 @@
         <header>
             <h1>@Umbraco.Field("siteName", recursive: true)</h1>
             <p>@Umbraco.Field("byline", recursive: true)</p>
+            <p>Environment: @System.Configuration.ConfigurationManager.AppSettings["currentEnvironment"]</p>
         </header>
         <footer>
             <a href="#banner" class="button style2 scrolly">@Umbraco.Field("continueButtonText")</a>
