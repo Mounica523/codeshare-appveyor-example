@@ -363,6 +363,7 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="parameters.xml" />
     <Content Include="scripts\init.js" />
     <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\jquery.poptrox-2.2.js" />
