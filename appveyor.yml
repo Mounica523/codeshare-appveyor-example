@@ -1,8 +1,13 @@
-version: 1.0.1-{build}
+version: 1.0.0-{build}
 configuration: Release
+cache:
+  - packages -> **\packages.config
 before_build:
   nuget restore
 build:
   publish_wap: true
-cache:
-  - packages -> **\packages.config
+deploy:
+  provider: Environment
+  name: codeshare-appveyor-example
+  on:
+    branch: master
