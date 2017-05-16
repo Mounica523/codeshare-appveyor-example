@@ -10,4 +10,4 @@ deploy:
   provider: Environment
   name: codeshare-appveyor-example
   on:
-    branch: master
+    appveyor_repo_tag: true
