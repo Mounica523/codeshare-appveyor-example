@@ -5,9 +5,10 @@ cache:
 before_build:
   nuget restore
 build:
-  publish_wap: true
+publish_wap_xcopy: true
 deploy:
-  provider: Environment
-  name: codeshare-appveyor-example
-  on:
-    appveyor_repo_tag: true
+- provider: AzureAppServiceZipDeploy
+  website: armsacctsasapp
+  username: $armsacctsasapp
+  password:
+    secure: dj4z0cjsQwgP1tQFD5EpR3X82pntGZ1a5Y8r9nDYyubbddLzWAvrhAMSeGPS
